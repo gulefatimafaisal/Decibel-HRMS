@@ -338,7 +338,9 @@ img{
 .circle {
   width: 48px;
   height: 48px;
-  background-color: #40E0D0;
+  background: #000046;  
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  
+  background: linear-gradient(to right, #1CB5E0, #000046); 
   color: white;
   border-radius: 50%;
   display: flex;
