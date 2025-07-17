@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Position</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="recruitment.css">  
+  <link rel="stylesheet" href="edit-position.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Sidebar toggle -->
+  <input type="checkbox" id="menu-toggle" hidden>
+
+  <!-- Header -->
+  <header class="bar">
+    <div class="logo">
+      <img src="logo_default_dark_compact.png" alt="Decibel HRMS" />
+    </div>
+    <div class="icons">
+      <a href="index.html" title="Home"><i class="fa-solid fa-house"></i></a>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-bell"></i>
+      <i class="fa-solid fa-question"></i>
+      <label for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+        <a href="index.html" class="title-link" style="text-decoration: none;"><span class="title">Dashboard</span></a>
+        <label for="menu-toggle" class="close-btn">&times;</label>
+      </div>
+
+      <!-- Recruitment -->
+      <input type="checkbox" id="menu-recruitment" hidden>
+      <label for="menu-recruitment" class="menu-title">Recruitment</label>
+      <div class="submenus">
+          <a href="new-position.html" class="submenu-item">- Add New Position</a>
+          <a href="edit-position.html" class="submenu-item">- Edit Position</a>
+          <a href="transfer.html" class="submenu-item">- Position Transfer</a>
+          <a href="org-structure.html" class="submenu-item">- Organization Structure</a>
+          <a href="resume.html" class="submenu-item">- Enter Resume Details</a>
+          <a href="onboarding-management.html" class="submenu-item">- Onboarding Management</a>
+          <a href="onboarding-view.html" class="submenu-item">- Onboarding View</a>
+          <a href="employee-profile.html" class="submenu-item">- Employee Profile</a>
+          <a href="tat-report.html" class="submenu-item">- Position TAT Report</a>
+      </div>       
+    </div>
+  </div>
+
+  <main class="form">
+        <h1>Recruiting Management</h1>
+        <div class="card">
+            <h2>Edit Position</h2>
+
+             <label for="company">Company Name </label>
+            <select id="company" name="company">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Descon</option>
+            </select>
+        </div>
+  </main> 
+
+  <main class="form">
+        <div class="card">
+            <h2>Job Details</h2>
+
+            <label for="appraisal">Position Title</label>
+            <input type="text">
+            
+            <label for="job-cat">Employement Type</label>
+            <select id="job-cat" name="job-cat">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Contract</option>
+                 <option>Extended</option>
+                 <option>Full-Time</option> 
+                 <option>Intern</option>
+                 <option>Permanent</option>
+                 <option>Project-Short Term</option>
+                 <option>Project-Long Term</option> 
+                 <option>Regular</option>
+                 <option>Supply Out</option>
+                 <option>Trainee</option>
+            </select>
+
+            <label for="job-cat">Position Status</label>
+            <select id="job-cat" name="job-cat">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Active</option>
+                 <option>Inactive</option>
+            </select>
+
+            <label for="appraisal">Work Schedule</label>
+            <select id="appraisal" name="appraisal">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>AUH</option>
+                 <option>DCSRA</option>
+                 <option>DEL</option> 
+                 <option">DEST</option>
+                 <option>HMW</option>
+                 <option>KMW</option>
+                 <option>OM</option> 
+            </select>
+
+        </div>
+    </main>
+
+    <main class="form">
+        <div class="card">
+            <h2>Organizational Details</h2>
+
+            <label for="appraisal">Department</label>
+            <select id="appraisal" name="appraisal">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Corporate</option>
+                 <option>IT</option>
+                 <option>Engineering</option> 
+                 <option>HR</option>
+                 <option>Finance</option> 
+                 <option>Design</option>
+            </select>
+
+            <label for="division">Division</label>
+            <select id="division" name="division">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Construction</option>
+                 <option>DEST</option>
+                 <option>EPC</option> 
+                 <option>IS</option>
+                 <option>DEL</option>
+                 <option>IP</option>
+                 <option>Manufacturing</option> 
+            </select>
+            
+            <label for="appraisal">Organizational Unit</label>
+            <input type="text">
+
+            <label for="appraisal">Business Unit</label>
+            <select id="appraisal" name="appraisal">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Construction</option>
+                 <option value="quarterly">DEST</option>
+                 <option value="monthly">EPC</option> 
+                 <option value="monthly">IS</option>
+                 <option value="monthly">DEL</option>
+                 <option value="monthly">IP</option>
+                 <option value="monthly">Manufacturing</option> 
+            </select>
+
+            <label for="appraisal">Line Manager</label>
+            <select id="appraisal" name="appraisal">
+                 <option value="" disabled selected>- Please Select -</option>
+            </select>
+        </div>
+    </main>
+
+    <main class="form">
+        <div class="card">
+            <h2>Role Requiremnets</h2>
+
+            <label for="appraisal">Roles and Responsibilities</label>
+            <input type="text"> 
+
+            <label for="appraisal">Position Key Skill</label>
+            <input type="text"> 
+
+            <label for="appraisal">Required Education Level</label>
+            <select id="appraisal" name="appraisal">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>High School</option>
+                 <option>Diploma</option>
+                 <option>Bachelor's Degree</option> 
+                 <option>Master's Degree</option>
+                 <option>CA</option>
+                 <option>ACCA</option> 
+            </select>
+
+            <label for="appraisal">Required Experience</label>
+            <select id="appraisal" name="appraisal">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>1 - 2 Years</option>
+                 <option>2 - 3 Years</option>
+                 <option>3 - 4 Years</option> 
+                 <option>More than 4 Years</option>
+            </select>
+        </div>
+    </main>
+
+    <main class="form">
+        <div class="card">
+            <h2>Compensation and Location</h2>
+
+            <label for="grades">Grades</label>
+            <select id="Grades" name="grades">
+                 <option value=""disabled selected>- Please Select -</option>
+                 <option>A</option>
+                 <option>B</option>
+                 <option>C</option> 
+                 <option>D</option>
+                 <option>E</option>
+                 <option>F</option>
+                 <option>G</option> 
+                 <option>Intern</option>
+            </select>
+
+            <label for="grades">Salary Range</label>
+            <select id="Grades" name="grades">
+                 <option value=""disabled selected>- Please Select -</option>
+                 <option>Rs - 40000-50000</option>
+                 <option>Rs - 50000-60000</option>
+                 <option>Rs - 60000-70000</option> 
+                 <option>Rs - 70000-80000</option>
+                 <option>Rs - 80000-90000</option>
+                 <option>Rs - 90000-100000</option>
+                 <option>Rs - 100000-150000</option> 
+                 <option>Rs - 150000-200000</option>
+            </select>
+
+            <label for="appraisal">Location</label>
+            <select id="appraisal" name="appraisal">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>AMW Office</option>
+                 <option>Bulley Shah Packages,Kasur</option>
+                 <option>Con. Head Office</option> 
+                 <option>DHQ Lahore</option>
+            </select>
+
+        <button class="btn-s">Save</button>
+        </div>
+    </main>
+
+<main class="form-t">
+<div class="card-t">
+      <h2>Position Requisition Status</h2>
+
+      <div class="table-wrapper">
+    <table>
+  <thead>
+    <tr>
+      <th>Position Ref.</th>
+      <th>Position Title</th>
+      <th>Status</th>
+      <th>History</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4" style="text-align:center; font-style: italic; color: #666;">
+        NO DATA IS AVAILABLE
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</main>
+    
+
+    <footer>
+        <p><a href="#">Privacy Policy for Decibel HRMS</a></p>
+        <p>Decibel HRMS. 2025 DecibelBpo. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

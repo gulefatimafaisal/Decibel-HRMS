@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enter Resume Detail</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="recruitment.css">
+  <link rel="stylesheet" href="resume.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Sidebar toggle -->
+  <input type="checkbox" id="menu-toggle" hidden>
+
+  <!-- Header -->
+  <header class="bar">
+    <div class="logo">
+      <img src="logo_default_dark_compact.png" alt="Decibel HRMS" />
+    </div>
+    <div class="icons">
+     <a href="index.html" title="Home"><i class="fa-solid fa-house"></i></a>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-bell"></i>
+      <i class="fa-solid fa-question"></i>
+      <label for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+        <a href="index.html" class="title-link" style="text-decoration: none;"><span class="title">Dashboard</span></a>
+        <label for="menu-toggle" class="close-btn">&times;</label>
+      </div>
+
+      <!-- Recruitment -->
+      <input type="checkbox" id="menu-recruitment" hidden>
+      <label for="menu-recruitment" class="menu-title">Recruitment</label>
+      <div class="submenus">
+          <a href="new-position.html" class="submenu-item">- Add New Position</a>
+          <a href="edit-position.html" class="submenu-item">- Edit Position</a>
+          <a href="transfer.html" class="submenu-item">- Position Transfer</a>
+          <a href="org-structure.html" class="submenu-item">- Organization Structure</a>
+          <a href="resume.html" class="submenu-item">- Enter Resume Details</a>
+          <a href="onboarding-management.html" class="submenu-item">- Onboarding Management</a>
+          <a href="onboarding-view.html" class="submenu-item">- Onboarding View</a>
+          <a href="employee-profile.html" class="submenu-item">- Employee Profile</a>
+          <a href="tat-report.html" class="submenu-item">- Position TAT Report</a>
+      </div>       
+    </div>
+  </div>
+
+  <main class="form">
+        <h1>Recruiting Management</h1>
+        <div class="card">
+            <h2>Add Resume</h2>
+
+             <label for="company">Company Name </label>
+            <select id="company" name="company">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Descon</option>
+            </select>
+        </div>
+  </main> 
+
+  <main class="form">
+        <div class="card">
+            <h2>Personal Information</h2>
+
+            <label for="appraisal">First Name</label>
+            <input type="text">
+
+            <label for="appraisal">Last Name</label>
+            <input type="text">
+
+            <label for="appraisal">Father Name</label>
+            <input type="text">
+
+            <label for="appraisal">Date of Birth</label>
+            <input type="date">
+
+            <label for="appraisal">Nationality</label>
+            <select id="job-cat" name="job-cat">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Afghanistan</option>
+                 <option>Bangladesh</option>
+                 <option>Canada</option> 
+                 <option>Dubai</option>
+                 <option>Egypt</option>
+                 <option>Finland</option>
+                 <option>Germnay</option> 
+                 <option>Hong Kong</option>
+                 <option>Ireland</option>
+                 <option>Japan</option>
+                 <option>Korea</option>
+                 <option>London</option>
+                 <option>Malaysia</option>
+                 <option>Netherlands</option>
+                 <option>Oman</option>
+                 <option>Pakistan</option>
+                 <option>Qatar</option>
+                 <option>Russia</option>
+                 <option>Sri Lanka</option>
+                 <option>Turkey</option>
+                 <option>Uzbekistan</option>
+            </select>
+
+            <label for="appraisal">Gender</label>
+            <select id="job-cat" name="job-cat">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Female</option>
+                 <option>Male</option>
+            </select>
+
+            <label for="appraisal">Martial Status</label>
+            <select id="job-cat" name="job-cat">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Single</option>
+                 <option>Married</option>
+                 <option>Un-married</option> 
+                 <option>Divorced</option>
+                 <option>Widow</option>
+                 <option>Separate</option>
+            </select>
+
+            <label for="appraisal">CNIC</label>
+            <input type="number">
+        </div>
+    </main>
+
+    <main class="form">
+        <div class="card">
+            <h2>Contact Information</h2> 
+
+            <label for="appraisal">Address</label>
+            <input type="text">
+
+            <label for="appraisal">Country</label>
+            <select id="job-cat" name="job-cat">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Afghanistan</option>
+                 <option>Bangladesh</option>
+                 <option>Canada</option> 
+                 <option>Dubai</option>
+                 <option>Egypt</option>
+                 <option>Finland</option>
+                 <option>Germnay</option> 
+                 <option>Hong Kong</option>
+                 <option>Ireland</option>
+                 <option>Japan</option>
+                 <option>Korea</option>
+                 <option>London</option>
+                 <option>Malaysia</option>
+                 <option>Netherlands</option>
+                 <option>Oman</option>
+                 <option>Pakistan</option>
+                 <option>Qatar</option>
+                 <option>Russia</option>
+                 <option>Sri Lanka</option>
+                 <option>Turkey</option>
+                 <option>Uzbekistan</option>
+            </select>
+
+            <label for="appraisal">City</label>
+            <select id="job-cat" name="job-cat">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Afghanistan</option>
+                 <option>Bangladesh</option>
+                 <option>Canada</option> 
+                 <option>Dubai</option>
+                 <option>Egypt</option>
+                 <option>Finland</option>
+                 <option>Germnay</option> 
+                 <option>Hong Kong</option>
+                 <option>Ireland</option>
+                 <option>Japan</option>
+                 <option>Korea</option>
+                 <option>London</option>
+                 <option>Malaysia</option>
+                 <option>Netherlands</option>
+                 <option>Oman</option>
+                 <option>Pakistan</option>
+                 <option>Qatar</option>
+                 <option>Russia</option>
+                 <option>Sri Lanka</option>
+                 <option>Turkey</option>
+                 <option>Uzbekistan</option>
+            </select>
+
+            <label for="appraisal">Phone Number</label>
+            <input type="tel">
+
+            <label for="appraisal">Email Address</label>
+            <input type="email">
+        </div>
+    </main>
+
+    <main class="form">
+        <div class="card">
+            <h2>Career Information</h2>
+
+            <label for="appraisal">Resume Title</label>
+            <input type="text"> 
+
+            <label for="appraisal">Skills</label>
+            <input type="text"> 
+
+            <label for="appraisal">Career Level</label>
+            <select id="appraisal" name="appraisal">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Student/Internship</option>
+                 <option>Entry Level</option>
+                 <option>Mid Level</option> 
+                 <option>Executive</option>
+                 <option>Senior Executive</option>
+            </select>
+
+            <label for="appraisal">Career Objective</label>
+            <input type="text"> 
+
+            <label for="grades">Current Salary Range</label>
+            <select id="Grades" name="grades">
+                 <option value=""disabled selected>- Please Select -</option>
+                 <option>Rs - 40000-50000</option>
+                 <option>Rs - 50000-60000</option>
+                 <option>Rs - 60000-70000</option> 
+                 <option>Rs - 70000-80000</option>
+                 <option>Rs - 80000-90000</option>
+                 <option>Rs - 90000-100000</option>
+                 <option>Rs - 100000-150000</option> 
+                 <option>Rs - 150000-200000</option>
+            </select>
+
+            <label for="grades">Target Salary Range</label>
+            <select id="Grades" name="grades">
+                 <option value=""disabled selected>- Please Select -</option>
+                 <option>Rs - 40000-50000</option>
+                 <option>Rs - 50000-60000</option>
+                 <option>Rs - 60000-70000</option> 
+                 <option>Rs - 70000-80000</option>
+                 <option>Rs - 80000-90000</option>
+                 <option>Rs - 90000-100000</option>
+                 <option>Rs - 100000-150000</option> 
+                 <option>Rs - 150000-200000</option>
+            </select>
+
+            <label for="cvUpload">Upload CV</label>
+            <input type="file" id="cvUpload" name="cv" accept=".pdf,.doc,.docx">
+
+            <label for="job-title">Select Job</label>
+            <select id="job-title" name="job-title">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Admin & Finance Officer</option>
+                 <option>Business Head</option>
+                 <option>Chairman</option> 
+                 <option>Division President</option>
+                 <option>Engineer</option>
+                 <option>Finance Executive</option>
+                 <option>General Manager</option> 
+                 <option>HRBP</option>
+                 <option>Incharge</option>
+                 <option>Led Admin</option> 
+                 <option>Manager</option>
+                 <option>Network Administrator</option>
+                 <option>President</option>
+                 <option>QA Manager</option>
+                 <option>Receptionist</option>
+                 <option>Site Manager</option>
+                 <option>Testing Engineer</option> 
+                 <option>Vice Chairman</option>
+                 <option>Welding Inspector</option>
+                 <option>Zonal Manager</option> 
+            </select>
+
+            <button class="btn">Register</button>
+        </div>
+    </main>
+
+
+    <footer>
+        <p><a href="#">Privacy Policy for Decibel HRMS</a></p>
+        <p>Decibel HRMS. 2025 DecibelBpo. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

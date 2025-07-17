@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notifications</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="workforce.css">  
+  <link rel="stylesheet" href="notification.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Sidebar toggle -->
+  <input type="checkbox" id="menu-toggle" hidden>
+
+
+  <!-- Header -->
+  <header class="bar">
+    <div class="home-icon">
+      <i class="fa-solid fa-house"></i>
+    </div>
+    <h1>MY DASHBOARD</h1>
+    <div class="menu-icon">
+      <label for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+        <a href="index.html" class="title-link" style="text-decoration: none;"><span class="title">Dashboard</span></a>
+        <label for="menu-toggle" class="close-btn">&times;</label>
+      </div>
+
+      <!-- Workforce -->
+      <input type="checkbox" id="menu-recruitment" hidden>
+      <label for="menu-recruitment" class="menu-title">Workforce Administration</label>
+      <div class="submenus">
+          <a href="emp-data.html" class="submenu-item">- Employee Data</a>
+          <a href="notification.html" class="submenu-item">- Notification</a>
+          <a href="print-emp-data.html" class="submenu-item">- Print Employee Data</a>
+          <a href="emp-letter.html" class="submenu-item">- Employee Letter</a>
+          <a href="exit-report.html" class="submenu-item">- Exit Interview Report</a>
+          <a href="hiring.html" class="submenu-item">- Hiring Notifications</a>
+          <a href="separation.html" class="submenu-item">- Separation Notifictaion</a>
+          <a href="transfer-notification.html" class="submenu-item">- Transfer Notification</a>
+          <a href="salary-change.html" class="submenu-item">- Change in Salary Notification</a>
+          <a href="clearance.html" class="submenu-item">- Initiate Clearance Process</a>
+          <a href="clearance-view.html" class="submenu-item">- Clearance View</a>
+      </div>       
+    </div>
+  </div>
+
+  <main class="form">
+        <h1>Employee Data Reports</h1>
+        <div class="card">
+            <h2>Employee Data Notification Reports</h2>
+            <div class="table-wrapper">
+            <table>
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Report Name</th>
+            <th>Report Description</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Hiring Notification</td>
+            <td>Notification Report</td>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Clearance Report</td>
+            <td>Consolidated Clearance TAT for Descon</td>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Service Confirmation Notification</td>
+            <td>Notification Report</td>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Promotion Notification</td>
+            <td>Notification Report</td>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Separation Notification</td>
+            <td>Notification Report</td>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Transfer Notification</td>
+            <td>Notification Report</td>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Change in Employee Data</td>
+            <td>Show consolidated change in employee data analysis based on selected time period.</td>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    </main>
+
+
+    <footer>
+        <p><a href="#">Privacy Policy for Decibel HRMS</a></p>
+        <p>Decibel HRMS. 2025 DecibelBpo. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

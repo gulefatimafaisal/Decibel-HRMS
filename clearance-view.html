@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clearance View</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="workforce.css">  
+  <link rel="stylesheet" href="clearance-view.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Sidebar toggle -->
+  <input type="checkbox" id="menu-toggle" hidden>
+
+  <!-- Header -->
+  <header class="bar">
+    <div class="logo">
+      <img src="logo_default_dark_compact.png" alt="Decibel HRMS" />
+    </div>
+    <div class="icons">
+      <a href="index.html" title="Home"><i class="fa-solid fa-house"></i></a>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-bell"></i>
+      <i class="fa-solid fa-question"></i>
+      <label for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+        <a href="index.html" class="title-link" style="text-decoration: none;"><span class="title">Dashboard</span></a>
+        <label for="menu-toggle" class="close-btn">&times;</label>
+      </div>
+
+      <!-- Workforce -->
+      <input type="checkbox" id="menu-recruitment" hidden>
+      <label for="menu-recruitment" class="menu-title">Workforce Administration</label>
+      <div class="submenus">
+          <a href="emp-data.html" class="submenu-item">- Employee Data</a>
+          <a href="notification.html" class="submenu-item">- Notification</a>
+          <a href="print-emp-data.html" class="submenu-item">- Print Employee Data</a>
+          <a href="emp-letter.html" class="submenu-item">- Employee Letter</a>
+          <a href="exit-report.html" class="submenu-item">- Exit Interview Report</a>
+          <a href="hiring.html" class="submenu-item">- Hiring Notifications</a>
+          <a href="separation.html" class="submenu-item">- Separation Notifictaion</a>
+          <a href="transfer-notification.html" class="submenu-item">- Transfer Notification</a>
+          <a href="salary-change.html" class="submenu-item">- Change in Salary Notification</a>
+          <a href="clearance.html" class="submenu-item">- Initiate Clearance Process</a>
+          <a href="clearance-view.html" class="submenu-item">- Clearance View</a>
+      </div>       
+    </div>
+  </div>
+
+  <main class="form">
+        <h1>Workforce</h1>
+        <div class="card">
+            <h2>Clearance View</h2>
+
+             <label for="appraisal">Department</label>
+            <select id="appraisal" name="appraisal">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>Corporate</option>
+                 <option>IT</option>
+                 <option>Engineering</option> 
+                 <option>HR</option>
+                 <option>Finance</option> 
+                 <option>Design</option>
+            </select>
+
+            <label for="appraisal">Location</label>
+            <select id="appraisal" name="appraisal">
+                 <option value="" disabled selected>- Please Select -</option>
+                 <option>AMW Office</option>
+                 <option>Bulley Shah Packages,Kasur</option>
+                 <option>Con. Head Office</option> 
+                 <option>DHQ Lahore</option>
+            </select>
+
+            <label for="date">From Date</label>
+            <input type="date">
+
+            <label for="date">To Date</label>
+            <input type="date">
+
+        <button class="btn">Search</button>
+
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="#">Privacy Policy for Decibel HRMS</a></p>
+        <p>Decibel HRMS. 2025 DecibelBpo. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

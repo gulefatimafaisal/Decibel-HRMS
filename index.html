@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DECIBEL</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Sidebar toggle -->
+  <input type="checkbox" id="menu-toggle" hidden>
+
+  <!-- Header -->
+  <header class="bar">
+    <div class="logo">
+      <img src="logo_default_dark_compact.png" alt="Decibel HRMS" />
+    </div>
+    <div class="icons">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-bell"></i>
+      <i class="fa-solid fa-question"></i>
+      <label for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+        <span class="title" style="color: white;">Dashboard</span>
+        <label for="menu-toggle" class="close-btn">&times;</label>
+      </div>
+
+      <!-- Employee Modules -->
+    <div class="menu-section">
+      <input type="checkbox" id="menu-modules" hidden>
+      <label for="menu-modules" class="menu-title" style="color: white;">Modules</label>
+      <div class="submenus">
+        <a href="travel.html" class="submenu-item" style="color: white;">- Travel</a>
+        <a href="leave.html" class="submenu-item" style="color: white;">- Leave</a>
+        <a href="workforce.html" class="submenu-item" style="color: white;">- Workforce Administration</a>
+        <a href="performance-management.html" class="submenu-item" style="color: white;">- Performance Management</a>
+        <a href="recruitment.html" class="submenu-item" style="color: white;">- Recruitment</a>
+        <a href="prb.html" class="submenu-item" style="color: white;">- Probation HR</a>
+        </div>
+    </div>
+
+         <!-- Help -->
+    <div class="menu-section">
+      <input type="checkbox" id="menu-knowledge-help" hidden>
+      <label for="menu-knowledge-help" class="menu-title" style="color: white;">Knowledge & Help</label>
+      <div class="submenus">
+        <a href="#" class="submenu-item" style="color: white;">- Policies</a>
+        <a href="#" class="submenu-item" style="color: white;">- Download</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Dashboard -->
+<section class="dashboard">
+  <div class="dashboard-header">
+    <h1>Dashboard</h1>
+    <div class="line"></div>
+    <p>Welcome!</p>
+  </div>
+
+  <div class="card single-card">
+    <h2>My Dashboard</h2>
+    <div class="icon-list">
+      <div class="icon-item">
+        <i class="fa-solid fa-paper-plane"></i>
+        <a href="travel.html" style="text-decoration: none; color: #4a4a4a;"><p>Travel</p></a>
+      </div>
+      <div class="icon-item">
+        <i class="fa-solid fa-calendar-check"></i>
+        <a href="leave.html" style="text-decoration: none; color: #4a4a4a;"><p>Leave</p></a>
+      </div>
+      <div class="icon-item">
+        <i class="fa-solid fa-user-group"></i>
+        <a href="workforce.html" style="text-decoration: none; color: #4a4a4a;"><p>Workforce Administration</p></a>
+      </div>
+      <div class="icon-item">
+        <i class="fa-solid fa-chart-simple"></i>
+        <a href="performance-management.html" style="text-decoration: none; color: #4a4a4a;"><p>Performance Management</p></a>
+      </div>
+      <div class="icon-item">
+        <i class="fa-solid fa-user-plus"></i>
+        <a href="recruitment.html" style="text-decoration: none; color: #4a4a4a;"><p>Recruitment</p></a>
+      </div>
+      <div class="icon-item">
+        <i class="fa-solid fa-user-clock"></i>
+        <a href="prb.html" style="text-decoration: none; color: #4a4a4a;"><p>Probation HR</p></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ToDo -->
+ <main class="form">
+            <div class="card">
+              <h2>To Do</h2>
+              <ul class="todo-points">
+      <li>
+        <span class="label">Employee Acknowledgement</span>
+        <span class="badge">22</span>
+      </li>
+      <li>
+        <span class="label">HR Publish</span>
+        <span class="badge">15</span>
+      </li>
+      <li>
+        <span class="label">LM Assessment</span>
+        <span class="badge">38</span>
+      </li>
+      <li>
+        <span class="label">Self Service Approval</span>
+        <span class="badge">50</span>
+      </li>
+      <li>
+        <span class="label">Pending Exit Interview</span>
+        <span class="badge">41</span>
+      </li>
+                </ul>
+            </div>
+        </main>
+
+
+<!-- My Team -->
+ <main class="form">
+  <div class="card">
+    <div class="team-header">
+      <h2>My Team</h2>
+      <a href="#">View Org Chart</a>
+    </div>
+    <div class="team-members">
+      <div class="team-member">
+        <div class="circle">AB</div>
+        <div class="team-info">
+          <strong>ABCD</strong>
+          <p>Specialist Performance & Rewards</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="circle">CD</div>
+        <div class="team-info">
+          <strong>EFGH</strong>
+          <p>Lead Core User SAP</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main> 
+
+
+<!-- News -->
+        <main class="form">
+            <div class="card">
+              <h2>News & Announcement</h2>
+                <h4>Decibel News – Fast, Effective and Easy to Access for Corporate News</h4>
+                <div>
+                    <img src="News.jpg">
+                </div>
+                <div class="point">
+                  <p>Decibel News Channel is an effective platform to share latest news or announcement of the Company. Instant publishing, easy to access and control management are the key features.</p>
+                </div>
+            </div>
+        </main>
+
+
+<!-- Profile -->
+  <div class="profile">
+    <div class="p-header">
+      <h2>My Profile</h2>
+      <div class="p-circle">
+        <span>67%</span>
+      </div>
+      <a href="#" class="update">Update </a>
+    </div>
+    
+    <div class="progress">
+      <p>Info</p>
+      <div class="p-bar">
+        <div class="fill" style="width: 33%;">33%</div>
+      </div>
+    </div>
+
+    <div class="progress">
+      <p>Profile</p>
+      <div class="p-bar">
+        <div class="fill" style="width: 95%;">95%</div>
+      </div>
+    </div>
+
+    <div class="progress">
+      <p>Other Info</p>
+      <div class="p-bar">
+        <div class="fill" style="width: 100%;">100%</div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <footer>
+        <p><a href="#">Privacy Policy for Decibel HRMS</a></p>
+        <p>Decibel HRMS. 2025 DecibelBpo. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
