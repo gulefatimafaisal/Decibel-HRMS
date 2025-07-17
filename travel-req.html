@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Requisition</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="travel.css"/>
+  <link rel="stylesheet" href="travel-req.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Sidebar toggle -->
+  <input type="checkbox" id="menu-toggle" hidden>
+
+  <!-- Header -->
+  <header class="bar">
+    <div class="logo">
+      <img src="logo_default_dark_compact.png" alt="Decibel HRMS" />
+    </div>
+    <div class="icons">
+      <a href="index.html" title="Home"><i class="fa-solid fa-house"></i></a>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-bell"></i>
+      <i class="fa-solid fa-question"></i>
+      <label for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+        <a href="index.html" class="title-link" style="text-decoration: none;"><span class="title">Dashboard</span></a>
+        <label for="menu-toggle" class="close-btn">&times;</label>
+      </div>
+
+      <!-- Travel -->
+    <div class="menu-section">
+      <input type="checkbox" id="menu-tarvel" hidden>
+      <label for="menu-tarvel" class="menu-title" style="color: white;">Travel</label>
+      <div class="submenus">
+        <a href="tarvel-req.html" class="submenu-item" style="color: white;">- Travel Requisition</a>
+        <a href="submitted-travel.html" class="submenu-item" style="color: white;">- Submitted Travel</a>
+        <a href="expense-travel.html" class="submenu-item" style="color: white;">- Travel Expense</a>
+        <a href="print.html" class="submenu-item" style="color: white;">- Print Travel & Claim</a>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+  <main class="form-t">
+    <h1>Travel Management</h1>
+    <div class="card-t">
+      <h2>Travel Requisition</h2>
+    
+
+    <div class="trip-option">
+      <div class="option"><i class="fa-solid fa-plane-departure"></i>One Way Trip</div>
+      <div class="option"><i class="fa-solid fa-plane"></i>Return Trip</div>
+      <div class="option"><i class="fa-solid fa-earth-asia"></i>Multicity Trip</div>
+    </div>
+
+    <div class="radio-t">
+            <label><input type="radio" name="travelType">Local Travel</label>
+            <label><input type="radio" name="travelType">Overseas Travel</label>
+    </div>
+
+    <div class="form-group">
+      <label>Origin (from)</label>
+      <select><option selected disabled>Please Select</option></select>
+    </div>
+
+    <div class="form-group">
+      <label>Destination (to)</label>
+      <select><option selected disabled>Please Select</option></select>
+    </div>
+
+    <div class="form-group">
+      <label>Departure Date</label>
+      <input type="date">
+    </div>
+
+    <div class="form-group">
+      <label>Travelling By</label>
+      <select><option selected disabled>- Select -</option></select>
+    </div>
+
+    <div class="form-group">
+      <label for="travel-class">Travelling Class</label>
+        <select id="travel-class" name="travel-class">
+          <option value="" disabled selected>- Please Select -</option>
+           <option>Economy</option>
+           <option>Business Class</option>
+           <option>Private Transport</option>
+           <option>Public Transport</option>
+           <option>Taxi</option>
+           <option>Rent a Car</option>
+        </select>
+      
+    </div>
+
+    <div class="form-group">
+      <label for="time-preference">Travelling Time Preference</label>
+        <select id="time-preference" name="time-preference">
+          <option value="" disabled selected>- Please Select -</option>
+          <option>Morning - 7:30 AM to 12:00 AM</option>
+          <option>Afternoon - 12:30 AM to 04:00 PM</option>
+          <option>Evening - 4:30 AM to 07:00 PM</option> 
+          <option>Night - 7:30 AM to 12:00 AM</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+      <label>Accomodation</label>
+      <select><option selected disabled>- Select -</option></select>
+    </div>
+
+    <div class="form-group">
+      <label>Travel Advance (if required)</label>
+      <select><option selected disabled>- Select -</option></select>
+    </div>
+
+    <div class="form-group">
+      <label for="currency">Currency</label>
+        <select id="currency" name="currency">
+          <option value="" disabled selected>- Please Select -</option>
+           <option>PKR</option>
+           <option>USD</option>
+           <option>AED</option> 
+           <option>AUD</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+      <label>Contact Number</label>
+      <input type="number">
+    </div>
+
+    <div class="radio-t">
+            <label><input type="radio" name="travelType">Pickup Required</label>
+            <label><input type="radio" name="travelType">Personal Days</label>
+    </div>
+
+    <div class="form-group">
+      <label>Purpose</label>
+      <input type="text">
+    </div>
+
+    <button class="btn-t">Save</button>
+    </div>
+  </main>
+
+  <main class="form-t">
+    <div class="card-t">
+      <h2>Draft Requisition</h2>
+      <div class="table-wrapper">
+    <table>
+  <thead>
+    <tr>
+      <th>Action</th>
+      <th>Travel No.</th>
+      <th>Route Type</th>
+      <th>Route</th>
+      <th>Employee ID</th>
+      <th>Employee Name</th>
+      <th>Employee Position</th>
+      <th>Department</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="9" style="text-align:center; font-style: italic; color: #666;">
+        NO DATA IS AVAILABLE
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</main> 
+ 
+
+    <footer>
+        <p><a href="#">Privacy Policy for Decibel HRMS</a></p>
+        <p>Decibel HRMS. 2025 DecibelBpo. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
